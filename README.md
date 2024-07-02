@@ -17,7 +17,7 @@ same experience on theier local machine as well as a JupyterHub.
 pip install jupyter-neuroglancer
 ```
 
-## How to use
+## Usage
 
 `jupyter_neuroglancer` provides a `SidecarViewer` class that accepts a regular `neuroglancer` `Viewer`
 object. You don't have to modify your `neuroglancer` code in any way!
