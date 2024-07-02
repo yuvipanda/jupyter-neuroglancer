@@ -9,6 +9,14 @@ When running on a remote JupyterHub, the viewer is automatically (and securely) 
 [jupyter-server-proxy](https://github.com/jupyterhub/jupyter-server-proxy/) so users get the exact
 same experience on theier local machine as well as a JupyterHub.
 
+## Installation
+
+`jupyter-neuroglancer` is available on [PyPI](https://pypi.org/project/jupyter-neuroglancer/).
+
+```bash
+pip install jupyter-neuroglancer
+```
+
 ## How to use
 
 `jupyter_neuroglancer` provides a `SidecarViewer` class that accepts a regular `neuroglancer` `Viewer`
