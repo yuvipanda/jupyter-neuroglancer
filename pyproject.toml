@@ -9,7 +9,8 @@ readme = "README.md"
 license = {file = "LICENSE"}
 version = "0.1"
 dependencies = [
-    "neuroglancer"
+    "neuroglancer",
+    "sidecar"
 ]
 authors = [
     {name = "Yuvi", email="yuvipanda@gmail.com"}
