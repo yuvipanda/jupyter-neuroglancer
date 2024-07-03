@@ -38,3 +38,14 @@ scv.show()
 # Hide the panel
 scv.hide()
 ```
+
+## Using on a JupyterHub
+
+When using this on a JupyterHub, you need [jupyter-server-proxy](https://github.com/jupyterhub/jupyter-server-proxy/)
+installed in the image you are using. Since `neuroglancer` uses eventstreams for communication, you need it
+to be a version of `jupyter-server-proxy` that has [this PR](https://github.com/jupyterhub/jupyter-server-proxy/pull/479)
+included. Until that PR is merged and released, you can install that with:
+
+```bash
+pip install --upgrade git+https://github.com/ganisback/jupyter-server-proxy@support-stream
+```
