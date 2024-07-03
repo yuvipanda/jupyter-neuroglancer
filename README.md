@@ -19,7 +19,7 @@ pip install jupyter-neuroglancer
 
 ## Usage
 
-`jupyter_neuroglancer` provides a `SidecarViewer` class that accepts a regular `neuroglancer` `Viewer`
+`jupyter_neuroglancer` provides a `display_in_sidecar` function that accepts a regular `neuroglancer` `Viewer`
 object. You don't have to modify your `neuroglancer` code in any way!
 
 ```python
@@ -29,14 +29,8 @@ from jupyter_neuroglancer import SidecarViewer
 # Create a neuroglancer Viewer instance. This controls the visualization
 viewer = neuroglancer.Viewer()
 
-# Create a SidecarViewer that can show / hide the sidecar panel
-scv = SidecarViewer(viewer)
-
-# Show the panel
-scv.show()
-
-# Hide the panel
-scv.hide()
+# Display the neuroglancer in JupyterLab as a sidecar
+display_in_sidecar(viewer)
 ```
 
 ## Using on a JupyterHub
@@ -49,3 +43,5 @@ included. Until that PR is merged and released, you can install that with:
 ```bash
 pip install --upgrade git+https://github.com/ganisback/jupyter-server-proxy@support-stream
 ```
+
+Other than that, you do not have to modify your code in any way.
