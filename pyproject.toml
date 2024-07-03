@@ -7,7 +7,7 @@ name = "jupyter-neuroglancer"
 description = "Tiny Jupyter Wrapper for neuroglancer viewer"
 readme = "README.md"
 license = {file = "LICENSE"}
-version = "0.1"
+version = "0.2"
 dependencies = [
     "neuroglancer",
     "sidecar"
